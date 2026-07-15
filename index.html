@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="MonitoraSEI: acompanhe processos públicos e receba alertas quando houver novos andamentos ou documentos."
+  />
+  <meta name="theme-color" content="#0f172a" />
+  <title>MonitoraSEI | Alertas de andamentos em processos públicos</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="MonitoraSEI - início">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span>
+          <strong>MonitoraSEI</strong>
+          <small>Monitoramento de processos públicos</small>
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-menu"
+        aria-label="Abrir menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="main-menu" class="main-nav" aria-label="Navegação principal">
+        <a href="#problema">O problema</a>
+        <a href="#solucao">A solução</a>
+        <a href="#publico">Para quem</a>
+        <a href="#piloto">Piloto</a>
+        <a class="btn btn-small btn-outline" href="#contato">Quero conhecer</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-grid container">
+        <div class="hero-content">
+          <span class="eyebrow">Monitoramento automatizado de processos públicos</span>
+          <h1>Saiba quando um processo do SEI mudar, sem precisar consultar todos os dias.</h1>
+          <p class="hero-text">
+            O MonitoraSEI acompanha páginas públicas de processos, identifica novos
+            andamentos e documentos e avisa o responsável quando houver uma alteração.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contato">Quero apoiar o projeto</a>
+            <a class="btn btn-ghost" href="#solucao">Entender como funciona</a>
+          </div>
+
+          <div class="hero-badges" aria-label="Destaques do projeto">
+            <span>✓ Piloto com processos públicos</span>
+            <span>✓ Baixo custo de implantação</span>
+            <span>✓ Expansível para outros órgãos</span>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-label="Exemplo de atualização detectada">
+          <div class="status-row">
+            <span class="status-dot"></span>
+            <span>Monitoramento ativo</span>
+          </div>
+
+          <div class="process-card">
+            <div class="process-top">
+              <div>
+                <small>Processo monitorado</small>
+                <strong>99999-999999999/2026-11</strong>
+              </div>
+              <span class="tag">Processo público</span>
+            </div>
+
+            <div class="process-event">
+              <span class="event-icon" aria-hidden="true">↗</span>
+              <div>
+                <small>Novo andamento identificado</small>
+                <strong>Processo recebido na unidade</strong>
+                <p>Unidade administrativa responsável</p>
+                <time>Hoje, 09:36</time>
+              </div>
+            </div>
+          </div>
+
+          <div class="mini-stats">
+            <div>
+              <strong>24</strong>
+              <span>Processos</span>
+            </div>
+            <div>
+              <strong>7</strong>
+              <span>Atualizados</span>
+            </div>
+            <div>
+              <strong>0</strong>
+              <span>Falhas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="problema" class="section">
+      <div class="container two-columns">
+        <div>
+          <span class="section-kicker">O problema</span>
+          <h2>Consultar manualmente é repetitivo, demorado e arriscado.</h2>
+        </div>
+
+        <div class="problem-list">
+          <article class="problem-item">
+            <span>01</span>
+            <div>
+              <h3>Sem aviso automático</h3>
+              <p>O interessado precisa lembrar de acessar o processo para descobrir se algo mudou.</p>
+            </div>
+          </article>
+
+          <article class="problem-item">
+            <span>02</span>
+            <div>
+              <h3>Muitos processos ao mesmo tempo</h3>
+              <p>Empresas, escritórios e gestores podem acompanhar dezenas ou centenas de processos.</p>
+            </div>
+          </article>
+
+          <article class="problem-item">
+            <span>03</span>
+            <div>
+              <h3>Risco de perder tempo de resposta</h3>
+              <p>Uma movimentação importante pode passar despercebida por horas ou dias.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="solucao" class="section section-dark">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="section-kicker light">A solução</span>
+          <h2>Um acompanhamento simples, contínuo e centralizado.</h2>
+          <p>
+            O usuário cadastra o processo uma vez. Depois, a plataforma acompanha as
+            informações públicas, compara as atualizações e destaca exatamente o que mudou.
+          </p>
+        </div>
+
+        <div class="steps">
+          <article class="step-card">
+            <span class="step-number">1</span>
+            <h3>Cadastre</h3>
+            <p>Informe o processo e a página pública de acompanhamento.</p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-number">2</span>
+            <h3>Monitore</h3>
+            <p>O sistema realiza consultas periódicas e organiza os dados relevantes.</p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-number">3</span>
+            <h3>Compare</h3>
+            <p>A plataforma identifica novos andamentos, documentos e mudanças relevantes.</p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-number">4</span>
+            <h3>Avise</h3>
+            <p>O responsável recebe uma notificação e visualiza a alteração no painel.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">Recursos iniciais</span>
+          <h2>O essencial para validar a ideia e gerar valor desde o piloto.</h2>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-icon">01</div>
+            <h3>Painel unificado</h3>
+            <p>Visualize todos os processos monitorados, novidades e falhas de consulta.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">02</div>
+            <h3>Alertas de atualização</h3>
+            <p>Receba aviso quando surgir um novo andamento ou documento.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">03</div>
+            <h3>Linha do tempo</h3>
+            <p>Acompanhe o histórico de movimentações de forma clara e organizada.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">04</div>
+            <h3>Identificação do que mudou</h3>
+            <p>Compare coletas e destaque apenas as informações novas ou alteradas.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">05</div>
+            <h3>Responsáveis por processo</h3>
+            <p>Associe processos a pessoas, equipes ou empresas.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">06</div>
+            <h3>Base para indicadores</h3>
+            <p>Crie relatórios futuros sobre tempo parado, tramitação e unidades envolvidas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="publico" class="section section-soft">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="section-kicker">Para quem</span>
+          <h2>Uma solução para quem não pode depender de consultas manuais.</h2>
+        </div>
+
+        <div class="audience-grid">
+          <article>
+            <h3>Empresas e fornecedores</h3>
+            <p>Contratos, pagamentos, convênios, reajustes e processos administrativos.</p>
+          </article>
+
+          <article>
+            <h3>Escritórios e consultorias</h3>
+            <p>Acompanhamento de processos de vários clientes em um único ambiente.</p>
+          </article>
+
+          <article>
+            <h3>Gestores e equipes internas</h3>
+            <p>Controle centralizado de processos, responsáveis e movimentações relevantes.</p>
+          </article>
+
+          <article>
+            <h3>Cidadãos e profissionais</h3>
+            <p>Monitoramento simplificado de processos públicos de interesse próprio.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="piloto" class="section">
+      <div class="container pilot-box">
+        <div>
+          <span class="section-kicker">Piloto Órgão público</span>
+          <h2>Começar pequeno, validar rápido e expandir com segurança.</h2>
+          <p>
+            O primeiro piloto será direcionado a processos públicos relacionados à
+            Secretaria de Estado de Saúde do Monitoramento de processos públicos. O objetivo é validar a estabilidade das consultas, a identificação das mudanças e o valor percebido pelos usuários.
+          </p>
+
+          <div class="pilot-points">
+            <span>Validação com processos reais</span>
+            <span>Acompanhamento de falhas e acertos</span>
+            <span>Medição da redução de consultas manuais</span>
+            <span>Preparação para outros órgãos</span>
+          </div>
+        </div>
+
+        <aside class="pilot-metrics" aria-label="Metas iniciais do piloto">
+          <small>Metas iniciais</small>
+          <strong>100</strong>
+          <span>processos monitorados</span>
+          <hr />
+          <strong>95%+</strong>
+          <span>consultas concluídas com sucesso</span>
+          <hr />
+          <strong>Diariamente</strong>
+          <span>verificação de novas alterações</span>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container future-grid">
+        <div>
+          <span class="section-kicker light">Visão de futuro</span>
+          <h2>De monitoramento para inteligência processual.</h2>
+          <p>
+            Com os dados estruturados, a plataforma poderá evoluir para relatórios,
+            indicadores e análises sobre tramitação, tempo por unidade e processos sem movimentação.
+          </p>
+        </div>
+
+        <div class="future-list">
+          <span>Tempo médio por unidade</span>
+          <span>Processos sem movimentação</span>
+          <span>Indicadores por órgão</span>
+          <span>Resumo diário de atualizações</span>
+          <span>Integrações corporativas</span>
+          <span>Expansão para outros SEIs</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section contact-section">
+      <div class="container contact-box">
+        <div>
+          <span class="section-kicker">Apoie o projeto</span>
+          <h2>Vamos transformar uma consulta passiva em um acompanhamento ativo.</h2>
+          <p>
+            Estamos buscando patrocinadores, parceiros institucionais e usuários-piloto
+            interessados em apoiar a validação e o desenvolvimento da solução.
+          </p>
+        </div>
+
+        <form class="contact-form" action="https://formsubmit.co/wcaldasti@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Novo contato - MonitoraSEI" />          
+
+          <label>
+            Nome
+            <input type="text" name="nome" placeholder="Seu nome" required />
+          </label>
+
+          <label>
+            E-mail
+            <input type="email" name="email" placeholder="voce@empresa.com.br" required />
+          </label>
+
+          <label>
+            Organização
+            <input type="text" name="organizacao" placeholder="Empresa ou instituição" />
+          </label>
+
+          <label>
+            Como você gostaria de participar?
+            <select name="interesse" required>
+              <option value="">Selecione</option>
+              <option>Patrocinar o projeto</option>
+              <option>Participar do piloto</option>
+              <option>Apoiar institucionalmente</option>
+              <option>Conhecer a solução</option>
+            </select>
+          </label>
+
+          <label class="full">
+            Mensagem
+            <textarea name="mensagem" rows="5" placeholder="Conte um pouco sobre seu interesse"></textarea>
+          </label>
+
+          <button class="btn btn-primary full" type="submit">Enviar interesse</button>
+          <small class="form-note">
+            
+          </small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#inicio">
+          <span class="brand-mark">M</span>
+          <span>
+            <strong>MonitoraSEI</strong>
+            <small>Monitoramento de processos públicos</small>
+          </span>
+        </a>
+        <p>
+          Plataforma de monitoramento e notificação de andamentos em processos públicos.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#problema">O problema</a>
+        <a href="#solucao">A solução</a>
+        <a href="#piloto">Piloto</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> MonitoraSEI.</span>
+      <span>Projeto independente em fase de validação.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
